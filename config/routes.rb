@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :categories
   get 'categories/index'
 
   get 'categories/edit'
@@ -21,8 +22,7 @@ Rails.application.routes.draw do
 
   get 'home/index'
    resources :posts
-   resources :categories
-
+ 
  
   root :to =>'home#index'
 
