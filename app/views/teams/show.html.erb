@@ -1,0 +1,10 @@
+<h1 style="color: #ffffff;"><%= @team.name %></h1>
+
+
+<% if @athletes.each do |athlete| %>
+
+	<p><%= link_to (athlete.firstname)+(' ')+(athlete.lastname),athlete %></p>
+	
+<% end.empty? %>
+	<p>Sorry, there are no players to show in this team</p>
+<% end %>

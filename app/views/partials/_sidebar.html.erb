@@ -1,0 +1,40 @@
+<div id="sidebar">
+      <ul>
+       <li>
+        <div id="search">
+        <h1 style="color:#ffffff">Players</h1>
+    <%= search_form_for @q do |f| %>
+            <%= f.text_field :firstname_or_lastname_cont %>
+            <%= f.submit "Search" %>
+    <% end  %>
+</div>﻿
+        <div style="clear: both;"></div>
+       </li>
+       <br>
+       <li>
+        <h2>Current Standings</h2>
+        
+         <br>
+<p>         <a style="color:#D93544" href="http://www.espncricinfo.com/rankings/content/page/211271.html" >Rankings</a></p>
+       </li>
+       <li>
+        <h2>Categories</h2>
+        <ul>
+         <% all_categories.each do |cat| %>
+          <li> <%= link_to cat.name, category_path(:id => cat.id) %></li>
+         <% end %>
+
+        </ul>
+       </li>
+       <li>
+        <h2>Blogroll</h2>
+        <ul>
+         <% all_posts.each do |post| %>
+          <li> <%= link_to post.title, post_path(:id => post.id) %></li>
+         <% end %>
+
+        </ul>
+       </li>
+
+      </ul>
+     </div>

@@ -1,0 +1,67 @@
+<%= form_for(athlete) do |f| %>
+  <% if athlete.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(athlete.errors.count, "error") %> prohibited this athlete from being saved:</h2>
+
+      <ul>
+      <% athlete.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :firstname %>
+    <%= f.text_field :firstname %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lastname %>
+    <%= f.text_field :lastname %>
+  </div>
+
+  <div class="field">
+    <%= f.label :age %>
+    <%= f.number_field :age %>
+  </div>
+
+  <div class="field">
+    <%= f.label :runs %>
+    <%= f.number_field :runs %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fours %>
+    <%= f.number_field :fours %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sixes %>
+    <%= f.number_field :sixes %>
+  </div>
+
+  <div class="field">
+    <%= f.label :wickets %>
+    <%= f.number_field :wickets %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bowlingrank %>
+    <%= f.number_field :bowlingrank %>
+  </div>
+
+  <div class="field">
+    <%= f.label :battingrank %>
+    <%= f.number_field :battingrank %>
+  </div>
+
+  <div class="field">
+    <%= f.label :team_id %>
+    <%= f.number_field :team_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

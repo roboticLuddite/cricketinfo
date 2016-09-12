@@ -8,6 +8,7 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'pg'
 # Use Puma as the app server
 gem 'activeadmin', github: 'activeadmin'
+gem 'ransack'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets

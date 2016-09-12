@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160908192934) do
+ActiveRecord::Schema.define(version: 20160912173205) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,14 +42,60 @@ ActiveRecord::Schema.define(version: 20160908192934) do
     t.inet     "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "name"
     t.index ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
+  end
+
+  create_table "athletes", force: :cascade do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.integer  "age"
+    t.integer  "runs"
+    t.integer  "fours"
+    t.integer  "sixes"
+    t.integer  "wickets"
+    t.integer  "bowlingrank"
+    t.integer  "battingrank"
+    t.integer  "team_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "atletes", force: :cascade do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.integer  "age"
+    t.integer  "runs"
+    t.integer  "fours"
+    t.integer  "sixes"
+    t.integer  "wickets"
+    t.integer  "bowlingrank"
+    t.integer  "battingrank"
+    t.integer  "team_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "players", force: :cascade do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.integer  "age"
+    t.integer  "runs"
+    t.integer  "fours"
+    t.integer  "sixes"
+    t.integer  "wickets"
+    t.integer  "bowlingrank"
+    t.integer  "battingrank"
+    t.integer  "team_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "posts", force: :cascade do |t|
@@ -59,6 +105,12 @@ ActiveRecord::Schema.define(version: 20160908192934) do
     t.integer  "author_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "teams", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

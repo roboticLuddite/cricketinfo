@@ -1,18 +1,34 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Myapp</title>
-    <%= csrf_meta_tags %>
+<%= render "partials/header" %>
+  <div id="page">
+   <div id="page-bgtop">
+    <div id="page-bgbtm">
+    <div id="content">
+      <div class="flash-message">
+          <% flash.each do |key,value| %>
+          <p><%= value %> </p>
+          <% end %>
+      </div>
+          <%= yield %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
 
-  <body>
-  	<% flash.each do |key,value| %>
-  	<p><%= value %> </p>
+     
+      <div style="clear: both;"></div>
+     </div>
+     <!-- end #content -->
+  
+     <%= render "partials/sidebar" %>
+     <!-- end #sidebar -->
+     <div style="clear: both;"></div>
 
-  	<% end %>
-    <%= yield %>
+    </div>
+   </div>
+  </div>
+  <!-- end #page-->
+  <div id="footer">
+   <p>&Copy: 2016, World Cricket</p>
+  </div>
+  <!-- en #footer-->
+ </div>
+ <!-- end #wrapper-->
   </body>
 </html>
