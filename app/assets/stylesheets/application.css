@@ -18,14 +18,14 @@
 body {
  margin: 0;
  padding: 0;
- background: #000000;
+ background: #ffffff;
  font-family: Arial, Helvetica, sans-serif;
  font-size: 14px;
  color: #6F6F6F;
 
 }
 strong {
- color: #3F3F3F;
+ color: #00bfff;
 }
 h1,h2,h3 {
  margin: 0;
@@ -33,7 +33,7 @@ h1,h2,h3 {
  text-transform: uppercase;
  font-family: 'Abel', sans-serif;
  font-weight: normal;
- color: #2B2522;
+ color: #00bfff;
 }
 h1 {
  font-size: 2em;
@@ -43,6 +43,8 @@ h2 {
 }
 h3 {
  font-size: 1.6em;
+ font-weight: bold;
+
 }
 p,ul,ol {
  margin-top: 0;
@@ -53,10 +55,11 @@ ul,ol {
 }
 a {
  text-decoration: underline;
- color: #D93544;
+ color: #00bfff;
 }
 a:hover{
  text-decoration: none;
+ color: #6F6F6F;
 }
 table {
     font-family: arial, sans-serif;
@@ -67,14 +70,19 @@ table {
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 8px;
+    padding: 4px;
+}
+
+th
+{
+	color: #00bfff;
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #ffffff;
 }
 #wrapper{
- width: 1000px;
+ width: 1050px;
  margin: 0 auto;
  padding: 0;
  background: #000000; 
@@ -110,11 +118,11 @@ tr:nth-child(even) {
  font-family: 'Abel', sans-serif;
  font-size: 3.2em;
  font-weight: bold;
- color: #D43442;
+ color: #00bfff;
 }
 
 #logo h1 a {
- color: #D43442;
+ color: #00bfff;
 }
 
 #logo h1 span {
@@ -133,7 +141,7 @@ tr:nth-child(even) {
  border: none;
  background: none;
  text-decoration: none;
- color: #707070
+ color: #00bfff
 }
 
 
@@ -182,7 +190,7 @@ tr:nth-child(even) {
  height: 125px;
  margin: 0 auto;
  padding: 0;
- background: #D43442;
+ background: #00bfff;
 }
 
 #menu ul {
@@ -212,7 +220,7 @@ tr:nth-child(even) {
 }
 
 #menu a:hover, #menu .current_page_item a{
- background: #A32833;
+ background: #6F6F6F;
  text-decoration: none;
 }
 
@@ -261,7 +269,7 @@ tr:nth-child(even) {
 
 .post .title a, .page .title a {
  text-decoration: none;
- color: #000000;
+ color: #00bfff;
  border: none;
 }
 
@@ -380,7 +388,7 @@ tr:nth-child(even) {
 
 #sidebar a:hover {
  text-decoration: underline;
- color: #847F7E;
+ color: #00bfff;
 }
 
 /* Calendar */

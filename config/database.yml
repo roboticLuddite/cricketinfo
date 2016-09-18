@@ -17,7 +17,6 @@ development:
   password: ki_W489CSw-YsBm7oecGFzmDSt
   host: ec2-54-243-204-57.compute-1.amazonaws.com
   port: 5432
-  sslmode: require
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -29,7 +28,6 @@ test:
   password: ki_W489CSw-YsBm7oecGFzmDSt
   host: ec2-54-243-204-57.compute-1.amazonaws.com
   port: 5432 
-  sslmode: require
 
 production:
   <<: *default
@@ -38,4 +36,3 @@ production:
   password: ki_W489CSw-YsBm7oecGFzmDSt
   host: ec2-54-243-204-57.compute-1.amazonaws.com
   port: 5432 
-  sslmode: require
