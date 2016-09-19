@@ -255,8 +255,6 @@ tr:nth-child(even) {
  padding: 30px 20px 20px 20px;
  background-color: #FFFFFF ;
  box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,1);
- outline: 1px dashed #D4D4D4;
- outline-offset: -5px;
 
 }
 
