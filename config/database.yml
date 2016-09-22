@@ -12,10 +12,10 @@ default: &default
 
 development:
   <<: *default
-  database: d49k4c0gpcfrfc 
-  username: yfwtkvwvpkvufl
-  password: ki_W489CSw-YsBm7oecGFzmDSt
-  host: ec2-54-243-204-57.compute-1.amazonaws.com
+  database: dcgc25rpgui9gs 
+  username: zpxfvbqtalhldx
+  password: bb7hzBnp31krAyo6ZbltaHfM1f
+  host: ec2-54-243-229-49.compute-1.amazonaws.com
   port: 5432
 
 # Warning: The database defined as "test" will be erased and
@@ -23,16 +23,16 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: d49k4c0gpcfrfc 
-  username: yfwtkvwvpkvufl
-  password: ki_W489CSw-YsBm7oecGFzmDSt
-  host: ec2-54-243-204-57.compute-1.amazonaws.com
-  port: 5432 
+  database: dcgc25rpgui9gs 
+  username: zpxfvbqtalhldx
+  password: bb7hzBnp31krAyo6ZbltaHfM1f
+  host: ec2-54-243-229-49.compute-1.amazonaws.com
+  port: 5432
 
 production:
   <<: *default
-  database: d49k4c0gpcfrfc 
-  username: yfwtkvwvpkvufl
-  password: ki_W489CSw-YsBm7oecGFzmDSt
-  host: ec2-54-243-204-57.compute-1.amazonaws.com
-  port: 5432 
+  database: dcgc25rpgui9gs 
+  username: zpxfvbqtalhldx
+  password: bb7hzBnp31krAyo6ZbltaHfM1f
+  host: ec2-54-243-229-49.compute-1.amazonaws.com
+  port: 5432
